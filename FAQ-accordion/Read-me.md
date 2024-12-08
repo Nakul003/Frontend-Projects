@@ -10,6 +10,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Future updates](#future-updates)
 
 ## Overview
 
@@ -21,7 +22,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: (https://nakul003.github.io/Frontend-Projects/FAQ-accordion/index.html)
+- Solution URL: (https://nakul003.github.io/Frontend-Projects/FAQ-accordion/)
 
 
 ## My process
