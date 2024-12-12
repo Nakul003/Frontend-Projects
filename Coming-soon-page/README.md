@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Visit live site]()
+- [Visit live site](https://nakul003.github.io/Frontend-Projects/Coming-soon-page/)
 
 
 
