@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rating Component</title>
+</head>
+<body>
+    <!-- main container -->
+    <div class="container">
+        <!-- container for rating card -->
+        <div class="rating-card">
+            <!-- container for svg -->
+            <div class="svg-1-container">
+                <img src="./assets/icon-star.svg" alt="STAR-SVG">
+            </div>
+            <!-- conatiner for text content -->
+            <div class="text-container-1">
+                <h2>How did we do?</h2>
+                <p>Please let us know how we did with your support request.All feedback is appreciated to help us improve our offering!</p>
+            </div>
+
+            <!-- container for all buttons -->
+            <div class="buttons">
+                <!-- container for all rating buttons -->
+                <div class="rating-buttons">
+                    <button class="button" type="button">1</button>
+                    <button class="button" type="button">2</button>
+                    <button class="button" type="button">3</button>
+                    <button class="button" type="button">4</button>
+                    <button class="button" type="button">5</button>
+                </div>
+                <div class="message-error">
+                    <button class="submit" type="submit">SUBMIT</button>
+                    <p class="error">Please select a rating to continue</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- container for thankyou card -->
+        <div class="thankyou-card">
+            <!-- container for svg -->
+            <div class="svg-2-container">
+                <img src="./assets/illustration-thank-you.svg" alt="THANKYOU-SVG">
+            </div>
+
+            <div class="rated"></div>
+            <!-- container for text content -->
+            <div class="text-container-2">
+                <h2>Thank you!</h2>
+                <p>We appreciate you taking the time to give a rating.If you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
