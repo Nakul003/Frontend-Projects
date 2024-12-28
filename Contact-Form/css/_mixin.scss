@@ -1,0 +1,35 @@
+
+
+@mixin display-column{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@mixin display-row{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+
+@mixin display-gap-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    input{
+        width: calc(100% - 1rem);
+        padding: 0.8rem 0.5rem;
+        border-radius: 5px;
+        border: 1px solid $Grey-500-medium;
+        outline: none;
+        &:hover{
+            cursor: pointer;
+            border: 1px solid $Green-600-medium;
+        }
+
+        &:focus{
+            border: 1px solid $Green-600-medium;
+        }
+    }
+}

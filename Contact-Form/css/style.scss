@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import 'variables';
+@import 'mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", serif;
+}
+
+body {
+    background-color: $Green-200-lighter;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+.container {
+    width: 75%;
+    @include display-column;
+    color: $Grey-900-darker;
+    background-color: $White;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.error {
+    color: $Red;
+    visibility: hidden;
+}
+
+h1 {
+    color: $Grey-900-darker;
+}
+
+form {
+    @include display-column;
+    gap: 1rem;
+
+    span {
+        color: $Green-600-medium ;
+    }
+
+    .name {
+        @include display-column;
+        gap: 0.5rem;
+
+        .first {
+            @include display-gap-input;
+
+
+        }
+
+        .last {
+            @include display-gap-input;
+        }
+    }
+
+    .email {
+        @include display-gap-input;
+    }
+
+    .Query {
+        @include display-column;
+        gap: 1rem;
+
+        div {
+            @include display-column;
+
+            label {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0.5rem;
+                border: 1px solid $Grey-500-medium;
+                border-radius: 5px;
+                padding: 0.8rem 0.5rem;
+                cursor: pointer;
+                position: relative;
+            }
+
+            input {
+                width: 20px;
+                height: 21px;
+                cursor: pointer;
+                outline: none;
+            }
+
+            .radio {
+                position: absolute;
+                visibility: hidden
+            }
+        }
+    }
+
+    .message {
+        @include display-gap-input;
+        height: 12rem;
+
+        div {
+            height: 90%;
+
+            textarea {
+                height: calc(100% - 2rem);
+                ;
+                width: calc(100% - 2rem);
+
+                border-radius: 5px;
+                border: 1px solid $Grey-500-medium;
+                resize: none;
+                outline: none;
+                padding: 1rem;
+                font-size: 1rem
+            }
+        }
+
+    }
+
+    .checkbox {
+        @include display-row;
+        gap: 0.5rem;
+        position: relative;
+        margin-top: 1rem;
+
+        input {
+            width: 1.2rem;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .checked {
+            position: absolute;
+            cursor: pointer;
+            visibility: hidden;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+
+    }
+
+
+
+
+
+    .submit {
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 0.8rem 0rem;
+        border-radius: 5px;
+        border: 1px solid $Green-600-medium;
+        background-color: $Green-600-medium;
+        color: $White;
+        font-size: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #063f36;
+            border: 1px solid #063f36;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    body {
+        padding-top: 4rem;
+        padding-bottom: 4rem
+    }
+
+    .container {
+        width: 40rem;
+    }
+
+    form {
+        .name {
+            @include display-row;
+
+            .first {
+                width: 50%;
+
+
+            }
+
+            .last {
+                width: 50%;
+            }
+        }
+
+        .Query {
+            div {
+                @include display-row;
+
+                label {
+                    width: 50%;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width:0px) and (max-width:320px) {
+    .checked {
+        width: 0.9rem;
+    }
+}
+
+@media (min-width:320px) and (max-width:375px) {
+    .checked {
+        width: 1rem;
+    }
+}
+
+@media (min-width:0px) and (max-width:375px) {
+    .checked {
+        top: 0.7rem;
+    }
+
+}
+
+@media (min-width:375px) and (max-width:416px) {
+    .checked {
+        top: 0.57rem;
+        width: 1.2rem;
+        left: -0.1rem;
+    }
+}
+
+@media (min-width:417px) {
+    .checked {
+        top: 0rem;
+    }
+}
+
+@media (min-width:1930px) {
+    body {
+        overflow: hidden;
+        padding: 0;
+    }
+}

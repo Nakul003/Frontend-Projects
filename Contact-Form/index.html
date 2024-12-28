@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="myform">
+            <div class="name">
+
+                <div class="first">
+                    <label for="text-1">First Name <span>*</span></label>
+                    <div>
+                        <input aria-label="first-name" required class="first-name input" name="first-name" id="text-1" type="text">
+                    </div>
+                    <p aria-describedby="first-name-error" class="error">This field is required</p>
+                </div>
+
+                <div class="last">
+                    <label for="text-2">Last Name <span>*</span></label>
+                    <div>
+                        <input aria-label="last-name" required class="last-name input" name="last-name" id="text-2" type="text">
+                    </div>
+                    <p aria-describedby="last-name-error" class="error">This field is required</p>
+                </div>
+
+            </div>
+
+
+            <div class="email">
+                <label for="email">Email Address <span>*</span></label>
+                <div>
+                    <input aria-label="email" required class="email-address" name="email-address" id="email" type="email">
+                </div>
+                <p aria-describedby="email-error" class="error">Please enter a valid email address</p>
+
+            </div>
+
+            <div class="Query">
+                <label>Query Type <span>*</span></label>
+                <div>
+                    <label class="general-enquiry"><input aria-label="general-enquiry-radio" required class="general-enquiry" name="radio" type="radio" name="query" value="general-enquiry">
+                        <img class="radio-1 radio" src="./assets/icon-radio-selected.svg" alt="radio-svg">
+                        General Enquiry</label>
+                    <label class="support-request"><input aria-label="support-request-radio" required class="support-request" name="radio" type="radio" name="query" value="support-request">
+                        <img class="radio-2 radio" src="./assets/icon-radio-selected.svg" alt="radio-svg">
+                        Support Request</label>
+                </div>
+                <p aria-describedby="radio-not-selected-error" class="error">Please select a query type</p>
+            </div>
+
+            <div class="message">
+                <label for="message">Message <span>*</span></label>
+                <div>
+                    <textarea aria-label="users-message" name="message" id="message"></textarea>
+                </div>
+                <p aria-describedby="message-error" class="error">This field is required</p>
+            </div>
+
+            <div class="checkbox">
+                <input aria-label="consent-checkbox" required class="check" name="checkbox" id="check" type="checkbox">
+                <img class="checked" src="./assets/icon-checkbox-check.svg" alt="checkbox-svg">
+                <label for="check">I consent to be contacted by the team <span>*</span></label>
+            </div>
+            <p aria-describedby="checkbox-error" class="error">To submit this form, please consent to being contacted</p>
+                <button aria-label="submit-form" class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
