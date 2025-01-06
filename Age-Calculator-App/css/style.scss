@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'variables';
+@import 'mixin';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $Off-white;
+    min-height: 100vh;
+    @include flex-prop;
+    padding: 2rem 0rem;
+}
+
+.main-container {
+    position: relative;
+    width: 90%;
+    background-color: $White;
+    @include flex-prop;
+    justify-content: start;
+    gap: 3rem;
+    padding: 2rem 0rem;
+    border-radius: 20px 20px 70px 20px;
+    transition: all 500ms;
+}
+
+.input-container {
+    @include flex-row;
+    gap: 0.5rem;
+
+    div {
+        @include flex-col;
+        align-items: center;
+
+        div {
+            width: 60%;
+            display: flex;
+            align-items: start;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: $Smokey-grey;
+        }
+
+        input {
+            width: 60%;
+            padding: 0.4rem 0.5rem;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid $Smokey-grey;
+            color: $Off-black;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover{
+                border: 1px solid $Purple;
+            }
+
+            &:focus{
+                border: 1px solid $Purple;
+            }
+        }
+
+        input[type=number]::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+        }
+
+        .error{
+            visibility: hidden;
+            font-size: 0.7rem;
+            color: $Light-red;
+            text-align: center;
+            text-wrap: balance;
+        }
+    }
+}
+
+
+
+.line {
+    width: 90%;
+    background: $Light-grey;
+    height: 0.12rem;
+}
+
+.arrow-svg {
+    position: absolute;
+    background-color: $Purple;
+    border-radius: 32px;
+    top: 9rem;
+    padding: 0.7rem .9rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $Off-black;
+    }
+
+    img {
+        width: 1.5rem;
+    }
+}
+
+.text-container {
+    width: 90%;
+    @include flex-col;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 32px;
+    color: $Off-black ;
+
+    div {
+        @include flex-row;
+        gap: 0.5rem;
+    }
+
+    span {
+        color: $Purple ;
+    }
+}
+
+@media (min-width:386px) {
+    .arrow-svg{
+        top: 8rem;
+    }
+}
+
+@media (min-width:768px) {
+    .main-container {
+        width: 32rem;
+    }
+
+    .text-container{
+        font-size: 42px;
+    }
+}

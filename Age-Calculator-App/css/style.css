@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.main-container {
+  position: relative;
+  width: 90%;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+  padding: 2rem 0rem;
+  border-radius: 20px 20px 70px 20px;
+  transition: all 500ms;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.input-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-container div div {
+  width: 60%;
+  display: flex;
+  align-items: start;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(0, 1%, 44%);
+}
+.input-container div input {
+  width: 60%;
+  padding: 0.4rem 0.5rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 1%, 44%);
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.input-container div input:hover {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+.input-container div input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+.input-container div input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.input-container div .error {
+  visibility: hidden;
+  font-size: 0.7rem;
+  color: #ff5757;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.line {
+  width: 90%;
+  background: hsl(0, 0%, 86%);
+  height: 0.12rem;
+}
+
+.arrow-svg {
+  position: absolute;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 32px;
+  top: 9rem;
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+}
+.arrow-svg:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+.arrow-svg img {
+  width: 1.5rem;
+}
+
+.text-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 32px;
+  color: hsl(0, 0%, 8%);
+}
+.text-container div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.text-container span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 386px) {
+  .arrow-svg {
+    top: 8rem;
+  }
+}
+@media (min-width: 768px) {
+  .main-container {
+    width: 32rem;
+  }
+  .text-container {
+    font-size: 42px;
+  }
+}/*# sourceMappingURL=style.css.map */
