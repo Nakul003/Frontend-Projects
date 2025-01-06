@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - [Visit live site](https://your-solution-url.com)
-- [Visit my profile on frontend mentor](https://your-live-site-url.com)
+- [Visit my profile on frontend mentor](https://www.frontendmentor.io/profile/Nakul003)
 
 ### Built with
 
