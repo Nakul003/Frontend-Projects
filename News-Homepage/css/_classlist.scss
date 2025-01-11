@@ -1,0 +1,61 @@
+.cross-1 {
+    transform: rotate(45deg) translate(8px, 8px);
+    background-color: black;
+
+}
+
+.cross-2 {
+    opacity: 0;
+
+}
+
+.cross-3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+    background-color: black;
+
+}
+
+@media (min-width:0px) and (max-width:767px) {
+
+    .body-color{
+        background-color: $Grayish-blue;
+    }
+
+    .fixed-cross{
+        position: fixed;
+        right: 1rem;
+        z-index: 1;
+    }
+
+    .menu {
+        display: flex;
+        animation: slide-in 0.3s ease forwards;
+    }
+
+    .menu-exit {
+        animation: slide-out 0.3s ease forwards; // Slide-out animation
+    }
+
+
+    @keyframes slide-in {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes slide-out {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+
+}
