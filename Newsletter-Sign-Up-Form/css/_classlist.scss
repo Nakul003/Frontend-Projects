@@ -1,0 +1,27 @@
+.error-message{
+    visibility: visible;
+    color: $Tomato;
+}
+
+.error-input{
+    background-color: #ffe8e6;
+    border: 1px solid $Tomato;
+    color:$Tomato;
+
+    &:focus{
+        border: 1px solid $Tomato;
+    }
+
+    &:hover{
+        border: 1px solid $Tomato;
+    }
+
+    &::placeholder{
+        color:$Tomato ;
+    }
+}
+
+.display{
+    display: none;
+}
+

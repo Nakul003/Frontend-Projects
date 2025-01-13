@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.error-message {
+  visibility: visible;
+  color: hsl(4, 100%, 67%);
+}
+
+.error-input {
+  background-color: #ffe8e6;
+  border: 1px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+.error-input:focus {
+  border: 1px solid hsl(4, 100%, 67%);
+}
+.error-input:hover {
+  border: 1px solid hsl(4, 100%, 67%);
+}
+.error-input::-moz-placeholder {
+  color: hsl(4, 100%, 67%);
+}
+.error-input::placeholder {
+  color: hsl(4, 100%, 67%);
+}
+
+.display {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+.img-1 {
+  display: block;
+}
+
+.img-2 {
+  display: none;
+}
+
+.main-content {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-content p {
+  font-size: 16px;
+}
+
+h1 {
+  color: black;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.icons img {
+  width: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.error-state {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+span {
+  visibility: hidden;
+  font-weight: 700;
+}
+
+label {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid hsl(231, 7%, 60%);
+  font-size: 1rem;
+  cursor: pointer;
+}
+input:hover {
+  border: 1px solid hsl(234, 29%, 20%);
+}
+input:focus {
+  border: 1px solid hsl(234, 29%, 20%);
+}
+
+button {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid transparent;
+  background-color: hsl(234, 29%, 20%);
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(to right, rgb(255, 86, 111), rgb(255, 95, 92), rgb(255, 103, 62));
+  box-shadow: 0px 6px 10px rgb(255, 95, 92);
+  transition: all 0.1s;
+}
+
+.success-state {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+  padding: 1.5rem;
+  min-height: 95vh;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+.success-state .success-message {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.success-state .success-message p {
+  text-wrap: balance;
+  line-height: 1.5rem;
+}
+.success-state img {
+  width: 4rem;
+}
+
+button {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .success-state .success-message p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .img-1 {
+    display: none;
+  }
+  .img-2 {
+    display: block;
+  }
+  body {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    overflow: hidden;
+  }
+  .main-content {
+    width: 60%;
+  }
+  .img-2 {
+    display: block;
+    width: 40%;
+    height: 25rem;
+  }
+  button {
+    margin-bottom: 0;
+  }
+  .success-state {
+    width: 100%;
+    align-items: center;
+    padding-left: 11rem;
+  }
+  .success-state button {
+    width: 80%;
+    margin-bottom: 5rem;
+    align-self: baseline;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .error-state {
+    width: 60%;
+  }
+  input {
+    box-sizing: border-box;
+    width: 60%;
+  }
+  button {
+    width: 60%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .img-2 {
+    height: 30rem;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+  .main-content p {
+    font-size: 20px;
+  }
+  label {
+    font-size: 1rem;
+  }
+  .img-2 {
+    width: 30%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}/*# sourceMappingURL=style.css.map */

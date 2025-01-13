@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+    <title>Newsletter</title>
+</head>
+
+<body>
+    <img class="img img-1" src="./assets/illustration-sign-up-mobile.svg" alt="">
+    <div class="main-content">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="icons">
+            <div class="content">
+                <img src="./assets/icon-list.svg" alt="">
+                <p>Product discovery and building what matters</p>
+            </div>
+
+            <div class="content">
+                <img src="./assets/icon-list.svg" alt="">
+                <p>Measuring to ensure updates are a success</p>
+            </div>
+
+            <div class="content">
+                <img src="./assets/icon-list.svg" alt="">
+                <p>And much more!</p>
+            </div>
+        </div>
+
+        <div class="error-state">
+            <label for="email">Email address</label>
+            <span class="error">hello</span>
+        </div>
+
+        <input id="email" class="email" type="email" placeholder="email@company.com">
+        <button class="submit" type="submit"> Subscribe to monthly newsletter</button>
+    </div>
+    <img class="img img-2" src="./assets/illustration-sign-up-desktop.svg" alt="">
+
+    <!-- </div> -->
+
+    <div class="success-state">
+        <div class="success-message">
+            <img src="./assets/icon-list.svg" alt="">
+            <h1>Thanks for subscribing!</h1>
+            <p class="confirmation"></p>
+        </div>
+
+
+        <button class="dismiss">Dismiss message</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
