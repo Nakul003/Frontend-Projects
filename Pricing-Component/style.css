@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+}
+
+:root {
+    --Linear-Gradient: #a3a8f0 to #696fdd;
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+    --Font-size: 15px;
+    --Weight: 700;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 0;
+    background-color: var(--Very-Light-Grayish-Blue);
+    position: relative;
+}
+
+img{
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+}
+
+ .bg-top{
+    top: 0;
+    right: 0;
+}
+.bg-bottom{
+    bottom: 0;
+    left: 0;
+}
+
+.choose-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.9rem;
+    gap: 1rem;
+}
+
+h1 {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 1.65rem;
+}
+
+h4 {
+    color: var(--Light-Grayish-Blue);
+    font-size: 0.9rem;
+}
+
+input {
+    display: none;
+}
+
+.toggle {
+    width: 2.3rem;
+    height: 1.3rem;
+    background: linear-gradient(to right, #a3a8f0, #696fdd);
+    border-radius: 7rem;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    &::before {
+        content: "";
+        width: 1.3rem;
+        height: 1.3rem;
+        background-color: var(--Very-Light-Grayish-Blue);
+        display: flex;
+        border-radius: 7rem;
+        transform: translateX(15px);
+
+        transition: all 0.2s ease-in-out;
+    }
+
+    input:checked+&::before {
+        transform: translateX(0px);
+    }
+
+    &:hover{
+        opacity: 0.7;
+    }
+}
+        
+
+
+.plans {
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3rem;
+    text-align: center;
+    width: 90%;
+    height: 24.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin: auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+
+    .price{
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        span {
+            font-size: 2.3rem;
+            color: var(--Dark-Grayish-Blue);
+            font-weight: 700;
+        }
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    h4 {
+        font-size: 0.8rem;
+        color: var(--Dark-Grayish-Blue);
+    }
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.95rem;
+        width: 100%;
+
+        button {
+            background: #777ae1;
+            outline: none;
+            border: 1px solid white;
+            width: 95%;
+            height: 2.5rem;
+            padding: 0.79rem 0;
+            border-radius: 0.5rem;
+            color: var(--Very-Light-Grayish-Blue);
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.2rem;
+            cursor: pointer;
+            transition: all 300ms;
+            &:hover{
+                background: transparent;
+                color: #696fdd;
+                border: 1px solid #696fdd;
+            }
+        }
+
+        .line {
+            width: 90%;
+            height: .01rem;
+            background-color: var(--Light-Grayish-Blue);
+        }
+    }
+}
+
+.professional-plan {
+    background: linear-gradient(to bottom, #a3a8f0, #696fdd);
+    .price{
+        span{
+            color: var(--Very-Light-Grayish-Blue);
+        }
+
+    }
+    h1 {
+        color: var(--Very-Light-Grayish-Blue);
+    }
+
+    h4 {
+        color: var(--Very-Light-Grayish-Blue);
+    }
+
+    .detail {
+        button {
+            
+            background-color: var(--Very-Light-Grayish-Blue);
+            color: #696fdd;
+
+            &:hover{
+                color: #fff;
+                border: 1px solid #fff;
+            }
+        }
+    }
+}
+
+@media (min-width:375px) {
+    .plan {
+        width: 21rem;
+        min-height: 22rem;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+
+    img{
+        width: 20%;
+    }
+
+    h1{
+        font-size: 2.25rem;
+    }
+    
+    h4 {
+        font-size: 1.12rem;
+    }
+
+    .plans {
+        flex-direction: row;
+        gap: 0rem;
+        justify-content: center;
+    }
+
+    .plan {
+        margin:1rem 0 ;
+    }
+
+    .professional-plan{
+        margin:0rem 0 ;
+    }
+}
+
+
+@media (min-width:1920px){
+    body{
+        justify-content: center;
+    }
+}
