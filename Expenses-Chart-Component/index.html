@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/output.css">
+    <title>Expenses Chart Component</title>
+</head>
+
+<body class="min-h-screen py-[4rem] bg-Cream font-DM_Sans gap-4 flex flex-col justify-center md:gap-6">
+    <div
+        class="w-[21.38rem] h-[6rem] bg-Soft_red mx-auto rounded-lg flex justify-between px-[1.19rem] py-[1rem] box-border md:w-[33.1rem] md:h-[7.6rem] md:rounded-[1.2rem] md:py-[1.5rem] md:px-[1.9rem]">
+        <div class="flex flex-col gap-[0.16rem] text-Very_pale_orange">
+            <h4 class="text-[0.95rem] pt-[0.1rem] md:text-[1.09rem]">My balance</h4>
+            <h2 class="font-Weight_700 text-[1.49rem] md:text-[2.02rem]">$921.48</h2>
+        </div>
+        <img class="w-[3.9rem] pr-[0.2rem] md:w-[4.5rem] mr-[0.5rem]" src="./assets/logo.svg" alt="">
+    </div>
+
+    <div
+        class="bg-Very_pale_orange h-[26.4rem] px-[1.2rem] py-[1.5rem] w-[21.38rem] mx-auto rounded-lg flex flex-col gap-12 md:h-[31.2rem] md:w-[33rem]  md:px-[2.5rem]  md:py-[2.2rem] md:gap-[3.6rem]">
+        <h1 class="text-[1.48rem] font-Weight_700 md:text-[2rem] mt-[-0.5rem]">Spending - Last 7 days</h1>
+
+        <div class=" flex h-[14rem] flex-row items-end gap-[0.8rem] md:gap-[1.17rem]">
+            <div class="group flex flex-col relative gap-[0.7rem] items-center w-fit md:gap-[0.4rem]">
+                <div
+                    class="bg-black absolute top-[-2.8rem] text-white justify-center items-center flex w-[3rem] h-[2rem] text-[0.7rem] rounded-[0.3rem] opacity-0 transition-all duration-300 group-hover:opacity-100 pointer-events-none md:w-[4.55rem] md:h-[2.4rem] md:text-lg">
+                    $17.45</div>
+                <div
+                    class="bar w-[2.01rem] h-0 transition-opacity duration-300 hover:opacity-70 cursor-pointer rounded-[0.2rem] bg-Soft_red md:w-12">
+                </div>
+                <span class="text-[0.7rem] font-Weight_400 text-Medium_brown md:text-[0.9rem]">mon</span>
+            </div>
+
+            <div class="group flex flex-col relative gap-[0.7rem] items-center w-fit md:gap-[0.4rem]">
+                <div
+                    class="bg-black absolute top-[-2.8rem] text-white justify-center items-center flex w-[3rem] h-[2rem] text-[0.7rem] rounded-[0.3rem] opacity-0 transition-all duration-300 group-hover:opacity-100 pointer-events-none md:w-[4.55rem] md:h-[2.4rem] md:text-lg">
+                    $34.91</div>
+                <div
+                    class="bar w-[2.01rem] h-0 transition-all duration-300 hover:opacity-70 cursor-pointer rounded-[0.2rem] bg-Soft_red md:w-12">
+                </div>
+                <span class="text-[0.7rem] font-Weight_400 text-Medium_brown md:text-[0.9rem]">tue</span>
+            </div>
+
+            <div class=" group flex flex-col relative gap-[0.7rem] items-center w-fit md:gap-[0.4rem]">
+                <div
+                    class="bg-black absolute top-[-2.8rem] text-white justify-center items-center flex w-[3rem] h-[2rem] text-[0.7rem] rounded-[0.3rem] opacity-0 transition-all duration-300 group-hover:opacity-100 pointer-events-none md:w-[4.55rem] md:h-[2.4rem] md:text-lg">
+                    $52.36
+                </div>
+                <div class="bar w-[2.01rem] h-0 transition-all duration-300 hover:opacity-70 cursor-pointer rounded-[0.2rem] bg-Cyan md:w-12">
+                </div>
+                <span class="text-[0.7rem] font-Weight_400 text-Medium_brown md:text-[0.9rem]">wed</span>
+            </div>
+
+            <div class="group flex flex-col relative gap-[0.7rem] items-center w-fit md:gap-[0.4rem]">
+                <div
+                    class="bg-black absolute top-[-2.8rem] text-white justify-center items-center flex w-[3rem] h-[2rem] text-[0.7rem] rounded-[0.3rem] opacity-0 transition-all duration-300 group-hover:opacity-100 pointer-events-none md:w-[4.55rem] md:h-[2.4rem] md:text-lg">
+                    $31.07</div>
+                <div
+                    class="bar w-[2.01rem] h-0 transition-all duration-300 hover:opacity-70 cursor-pointer rounded-[0.2rem] bg-Soft_red md:w-12">
+                </div>
+                <span class="text-[0.7rem] font-Weight_400 text-Medium_brown md:text-[0.9rem]">thu</span>
+            </div>
+
+            <div class="group flex flex-col relative gap-[0.7rem] items-center w-fit md:gap-[0.4rem]">
+                <div
+                    class="bg-black absolute top-[-2.8rem] text-white justify-center items-center flex w-[3rem] h-[2rem] text-[0.7rem] rounded-[0.3rem] opacity-0 transition-all duration-300 group-hover:opacity-100 pointer-events-none md:w-[4.55rem] md:h-[2.4rem] md:text-lg">
+                    $23.39</div>
+                <div
+                    class="bar w-[2.01rem] h-0 transition-all duration-300 hover:opacity-70 cursor-pointer rounded-[0.2rem] bg-Soft_red md:w-12">
+                </div>
+                <span class="text-[0.7rem] font-Weight_400 text-Medium_brown md:text-[0.9rem]">fri</span>
+            </div>
+
+            <div class="group flex flex-col relative gap-[0.7rem] items-center w-fit md:gap-[0.4rem]">
+                <div
+                    class="bg-black absolute top-[-2.8rem] text-white justify-center items-center flex w-[3rem] h-[2rem] text-[0.7rem] rounded-[0.3rem] opacity-0 transition-all duration-300 group-hover:opacity-100 pointer-events-none md:w-[4.55rem] md:h-[2.4rem] md:text-lg">
+                    $43.28</div>
+                <div
+                    class="bar w-[2.01rem] h-0 transition-all duration-300 hover:opacity-70 cursor-pointer rounded-[0.2rem] bg-Soft_red md:w-12">
+                </div>
+                <span class="text-[0.7rem] font-Weight_400 text-Medium_brown md:text-[0.9rem]">sat</span>
+            </div>
+
+            <div class="group flex flex-col relative gap-[0.7rem] items-center w-fit md:gap-[0.4rem]">
+                <div
+                    class="bg-black absolute top-[-2.8rem] text-white justify-center items-center flex w-[3rem] h-[2rem] text-[0.7rem] rounded-[0.3rem] opacity-0 transition-all group-hover:opacity-100 pointer-events-none md:w-[4.55rem] md:h-[2.4rem] md:text-lg">
+                    $25.48</div>
+                <div
+                    class="bar w-[2.01rem] h-0 transition-all duration-300 hover:opacity-70 cursor-pointer rounded-[0.2rem] bg-Soft_red md:w-12">
+                </div>
+                <span class="text-[0.7rem] font-Weight_400 text-Medium_brown md:text-[0.9rem]">sun</span>
+            </div>
+        </div>
+
+        <div class="w-[100%] h-[0.1rem] border border-Soft_red mt-[-1.6rem] opacity-10 bg-Soft_red md:mt-[-2.1rem]">
+        </div>
+
+        <div class="flex flex-row justify-between">
+            <div class="flex flex-col mt-[-1.6rem] md:mt-[-2.1rem]">
+                <p class="text-Medium_brown text-[0.95rem] md:text-[1.12rem]">Total this month</p>
+                <h1 class="month-amount font-Weight_700 text-[1.92rem] md:text-[3rem]">$478.33</h1>
+            </div>
+            <div class="flex flex-col mt-[-0.2rem] md:mt-[-0.05rem]">
+                <h2 class="self-end font-Weight_700 text-[0.95rem] md:text-[1.1rem]">+2.4%</h2>
+                <p class="text-Medium_brown text-[0.93rem] md:text-[1.1rem]">from last month</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
