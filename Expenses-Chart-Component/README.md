@@ -32,6 +32,7 @@ Users should be able to:
 ### Links
 
 [Visit live site](https://nakul003.github.io/Frontend-Projects/Expenses-Chart-Component/)
+
 [Visit profile on frontend Mentor](https://www.frontendmentor.io/profile/Nakul003)
 
 ### Built with
