@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="container-1">
+            <h1>Mortgage Calculator</h1>
+            <a href="#" class="clear">Clear All</a>
+
+            <label>Mortgage Amount</label>
+            <div class="input-container">
+
+                <span class="pound">&#163;</span>
+                <input class="input amount" type="number" placeholder="">
+            </div>
+            <span class="error-message">This field is required</span>
+            <div class="term-interest">
+                <div>
+
+                    <label>Mortgage Term</label>
+                    <div class="input-container term-container">
+
+                        <input class="input term" type="number" placeholder="">
+                        <span class="years">years</span>
+                    </div>
+                    <span class="error-message">This field is required</span>
+                </div>
+                <div>
+
+                    <label>Interest Rate</label>
+                    <div class="input-container interest-container">
+
+                        <input class="interest" type="number" placeholder="">
+                        <span class="percent">%</span>
+                    </div>
+                    <span class="error-message">This field is required</span>
+                </div>
+            </div>
+
+            <label class="mortgage-type">Mortgage Type</label>
+            <div class="radio-group">
+                <label class="type"><input class="input custom-radio repayment" type="radio" name="mortgage_type">
+                    Repayment</label>
+                <label class="type"><input class="input custom-radio interest-only" type="radio" name="mortgage_type">
+                    Interest Only</label>
+            </div>
+            <span class="error-message">This field is required</span>
+            <button class="button">
+                <span class="icon-calc"><img src="./images/icon-calculator.svg" alt=""></span>
+                <span class="calculate">Calculate Repayments</span>
+            </button>
+        </div>
+
+        <div class="container-2">
+            <div class="result-empty">
+                <img src="./images/illustration-empty.svg" alt="Illustration">
+                <h2>Results shown here</h2>
+                <p>Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+            </div>
+
+
+            <div class="result">
+                <h2>Your results</h2>
+                <p>Your results are shown below based on the information you provided. To adjust the results, edit the
+                    form
+                    and click "calculate repayments" again.</p>
+                <div class="repayments">
+                    <div class="overall-repayments">
+                        <p>Your monthly repayments</p>
+                        <h1 class="monthly-repayments"></h1>
+                        <div class="line"></div>
+                        <p>Total you'll repay over the term</p>
+                        <h2 class="total-repayments"></h2>
+                    </div>
+
+                    <div class="interest-repayment">
+                        <p>Your total interest</p>
+                        <h1 class="interest-repay"></h1>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

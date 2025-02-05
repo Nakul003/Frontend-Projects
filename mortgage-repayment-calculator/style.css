@@ -1,0 +1,442 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: "Plus Jakarta Sans", serif;
+ }
+
+ :root {
+     --Lime: hsl(61, 70%, 52%);
+     --Red: hsl(4, 69%, 50%);
+     --White: hsl(0, 0%, 100%);
+     --Slate-100: hsl(202, 86%, 94%);
+     --Slate-300: hsl(203, 41%, 72%);
+     --Slate-500: hsl(200, 26%, 54%);
+     --Slate-700: hsl(200, 24%, 40%);
+     --Slate-900: hsl(202, 55%, 16%);
+     --Font-size-para: 16px;
+     --Weight-500: 500;
+     --Weight-700: 700;
+ }
+
+ body {
+     background-color: var(--White);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     overflow-x: hidden;
+ }
+
+ .main-container {
+     width: 100%;
+ }
+
+ .container-1 {
+     box-sizing: border-box;
+     width: 100%;
+     background: white;
+     padding: 2rem 1.5rem;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ h1 {
+     font-size: 1.5rem;
+     font-weight: var(--Weight-700);
+     color: var(--Slate-900);
+     margin-bottom: 11px;
+ }
+
+ a {
+     font-size: var(--Font-size-para);
+     color: var(--Slate-700);
+     font-weight: var(--Weight-500);
+ }
+
+ label {
+     display: block;
+     margin-top: 25px;
+     font-size: var(--Font-size-para);
+     color: var(--Slate-700);
+     font-weight: var(--Weight-500);
+ }
+
+ .input-container {
+     display: flex;
+     align-items: center;
+     margin-top: 12px;
+     position: relative;
+     width: 100%;
+     margin-bottom: 7px;
+ }
+
+ .error-message {
+     color: var(--Red);
+     font-size: 12px;
+     font-weight: var(--Weight-500);
+     visibility: hidden;
+
+     &.visibility {
+         visibility: visible;
+     }
+ }
+
+ .input-container span {
+     font-size: 18px;
+     font-weight: var(--Weight-700);
+     height: 48px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     margin-left: 1px;
+     transition: all 0.3s;
+ }
+
+ .pound {
+     width: 41px;
+     border-radius: 5px 0px 0px 5px;
+     color: var(--Slate-700);
+     background-color: var(--Slate-100);
+     left: -.01rem;
+ }
+
+ .years {
+     width: 82px;
+     right: 1px;
+     border-radius: 0px 5px 5px 0px;
+     color: var(--Slate-700);
+     background-color: var(--Slate-100);
+ }
+
+ .percent {
+     width: 50px;
+     border-radius: 0px 5px 5px 0px;
+     right: 1px;
+     color: var(--Slate-700);
+     background-color: var(--Slate-100);
+ }
+
+ .input-container input {
+     border: 1px solid var(--Slate-500);
+     outline: none;
+     flex: 1;
+     border-radius: 5px;
+     font-size: 16px;
+     padding: 14px;
+     font-weight: var(--Weight-700);
+     color: var(--Slate-900);
+     cursor: pointer;
+     transition: all 0.3s;
+
+     &::-webkit-inner-spin-button {
+         appearance: none;
+     }
+
+     &:hover {
+         border: 1px solid var(--Slate-900);
+     }
+
+     &:focus {
+         border: 1px solid var(--Lime);
+
+         &:hover {
+             border: 1px solid var(--Lime);
+         }
+     }
+ }
+
+ .input-container .amount {
+     padding-left: 54px;
+ }
+
+
+
+ .radio-group {
+     margin-top: 10px;
+ }
+
+ .radio-group label {
+     border: 1px solid var(--Slate-500);
+     border-radius: 5px;
+     font-weight: var(--Weight-700);
+     color: var(--Slate-900);
+     margin-top: -1px;
+     padding: 12px 16px;
+     font-size: 18px;
+     cursor: pointer;
+     margin-bottom: 9px;
+     transition: all 0.3s;
+
+     &:hover {
+         border: 1px solid var(--Lime);
+     }
+
+     &.radio-color {
+         background-color: #d7da2f53;
+         border: 1px solid var(--Lime);
+     }
+ }
+
+
+ .custom-radio {
+     margin-right: 15px;
+     margin-top: 2px;
+     appearance: none;
+     outline: 2px solid var(--Slate-900);
+     outline-offset: 3px;
+     border-radius: 50%;
+     height: 12px;
+     width: 12px;
+     transition: all 0.3s;
+     cursor: pointer;
+ }
+
+ .custom-radio:checked {
+     background-color: var(--Lime);
+     outline: 2px solid var(--Lime);
+ }
+
+
+
+ .button {
+     width: 100%;
+     background-color: var(--Lime);
+     color: #1f2937;
+     font-weight: bold;
+     padding: 12px;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 21px;
+     height: 58px;
+     border-radius: 1.8rem;
+     font-size: 18px;
+     gap: 0.9rem;
+     transition: all 0.3s;
+
+     &:hover {
+         background-color: #d7da2fcc;
+     }
+
+     .icon-calc {
+         margin-top: 4px;
+     }
+ }
+
+ .container-2 {
+     text-align: center;
+     background-color: var(--Slate-900);
+     box-sizing: border-box;
+     width: 100%;
+     padding: 2rem 2rem;
+ }
+
+ .container-2 img {
+     margin: 0 auto;
+ }
+
+ .container-2 h2 {
+     font-size: 24px;
+     font-weight: bold;
+     color: var(--White);
+     margin-top: 12px;
+ }
+
+ .container-2 p {
+     font-size: var(--Font-size-para);
+     color: var(--Slate-300);
+     margin-top: 17px;
+     line-height: 1.5;
+     font-weight: 500;
+ }
+
+
+ .container-2 .result {
+     text-align: start;
+     display: none;
+ }
+
+ .repayments {
+     background-color: #0e2431;
+     border-radius: 10px;
+     height: auto;
+     margin-top: 2rem;
+     box-shadow: 0px -5px var(--Lime);
+     padding: 0.2rem 1rem;
+     padding-bottom: 1rem;
+
+     h1 {
+         color: var(--Lime);
+         font-size: 40px;
+         margin-top: 0.5rem;
+         margin-bottom: 0.9rem;
+     }
+
+     h2 {
+         margin-top: 7px;
+     }
+
+     .line {
+         height: 1px;
+         background: var(--Slate-500);
+     }
+ }
+
+ .display-none {
+     display: none;
+ }
+
+ .error-icon {
+     background-color: var(--Red);
+     color: var(--White);
+ }
+
+
+ .input-container .error-border {
+     border: 1px solid var(--Red);
+
+     &:hover {
+         border: 1px solid var(--Red);
+     }
+ }
+
+
+ .icon-active {
+     background-color: var(--Lime);
+     color: var(--Slate-900);
+ }
+
+ @media (min-width:1024px) {
+     body {
+         background-color: var(--Slate-100);
+         padding: 13rem 0rem;
+     }
+
+     .main-container {
+         position: relative;
+         width: initial;
+     }
+
+     .container-1 {
+         width: 63rem;
+         height: 38rem;
+         border-radius: 1.5rem;
+         padding-top: 2.45rem;
+     }
+
+     .container-1 h1 {
+         display: inline;
+         margin-right: 7.3rem;
+         margin-left: 1rem;
+     }
+
+     .input-container {
+         width: 44.4%;
+         margin-left: 1rem;
+     }
+
+     .error-message {
+         margin-left: 1rem;
+     }
+
+     label {
+         margin-left: 1rem;
+         margin-top: 2.75rem;
+     }
+
+     .mortgage-type {
+         margin-top: -0.2rem;
+     }
+
+     .term-interest {
+         width: 44.4%;
+     }
+
+     .term-interest label {
+         margin-top: -0.3rem;
+     }
+
+     .term-interest div {
+         width: 50%;
+     }
+
+     .term-interest .input-container {
+         width: 100%;
+     }
+
+     .term-interest input {
+         width: 1rem;
+     }
+
+     .radio-group label {
+         width: 44.4%;
+         box-sizing: border-box;
+         margin-bottom: 12px;
+     }
+
+     .radio-group {
+         margin-top: 13px;
+     }
+
+     .custom-radio {
+         margin-right: 19px;
+         margin-left: 5px;
+     }
+
+     .button {
+         width: 32.5%;
+         margin-left: 1rem;
+         margin-top: 7px;
+     }
+
+     .term-interest {
+         display: flex;
+         gap: 1.5rem;
+     }
+
+     .container-2 {
+         right: 0;
+         top: 0;
+         width: 31.5rem;
+         display: flex;
+         align-items: center;
+         height: 38rem;
+         border-radius: 0px 24px 24px 80px;
+         position: absolute;
+     }
+
+     .result {
+         margin-top: -6rem;
+         margin-left: 10px;
+     }
+
+     .result .repayments {
+         position: relative;
+         top: 12px;
+         width: 26.5rem;
+        padding-left: 30px;
+        box-sizing: border-box;
+        padding-top: 14px;
+        height: auto;
+     }
+
+     .repayments .monthly-repayments{
+        font-size: 55px;
+        margin-bottom: 2rem;
+     }
+
+     .repayments .line{
+        margin-bottom: 32px;
+     }
+
+     .repayments .total-repayments{
+        margin-top: 7px;
+        margin-left: 0px;
+     }
+ }
