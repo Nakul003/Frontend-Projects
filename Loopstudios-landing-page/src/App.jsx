@@ -1,48 +1,48 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import Header from './components/Header'
-import Images from './components/Images'
-import Footer from './components/Footer'
+import Header from '../components/Header'
+import Images from '../components/Images'
+import Footer from '../components/Footer'
 const App = () => {
   const [images, setImages] = useState([
     {
-      src: "/src/assets/mobile/image-deep-earth.jpg",
-      src2: "/src/assets/desktop/image-deep-earth.jpg",
+      src: "../src/assets/mobile/image-deep-earth.jpg",
+      src2: "../src/assets/desktop/image-deep-earth.jpg",
       text: "DEEP EARTH"
     },
     {
-      src: "/src/assets/mobile/image-night-arcade.jpg",
-      src2: "/src/assets/desktop/image-night-arcade.jpg",
+      src: "../src/assets/mobile/image-night-arcade.jpg",
+      src2: "../src/assets/desktop/image-night-arcade.jpg",
       text: "NIGHT ARCADE"
     },
     {
-      src: "/src/assets/mobile/image-soccer-team.jpg",
-      src2: "/src/assets/desktop/image-soccer-team.jpg",
+      src: "../src/assets/mobile/image-soccer-team.jpg",
+      src2: "../src/assets/desktop/image-soccer-team.jpg",
       text: "SOCCER TEAM VR"
     },
     {
-      src: "/src/assets/mobile/image-grid.jpg",
-      src2: "/src/assets/desktop/image-grid.jpg",
+      src: "../src/assets/mobile/image-grid.jpg",
+      src2: "../src/assets/desktop/image-grid.jpg",
       text: "THE GRID"
     },
     {
-      src: "/src/assets/mobile/image-from-above.jpg",
-      src2: "/src/assets/desktop/image-from-above.jpg",
+      src: "../src/assets/mobile/image-from-above.jpg",
+      src2: "../src/assets/desktop/image-from-above.jpg",
       text: "FROM UP ABOVE VR"
     },
     {
-      src: "/src/assets/mobile/image-pocket-borealis.jpg",
-      src2: "/src/assets/desktop/image-pocket-borealis.jpg",
+      src: "../src/assets/mobile/image-pocket-borealis.jpg",
+      src2: "../src/assets/desktop/image-pocket-borealis.jpg",
       text: "POCKET BOREALIS"
     },
     {
-      src: "/src/assets/mobile/image-curiosity.jpg",
-      src2: "/src/assets/desktop/image-curiosity.jpg",
+      src: "../src/assets/mobile/image-curiosity.jpg",
+      src2: "../src/assets/desktop/image-curiosity.jpg",
       text: "THE CURIOSITY"
     },
     {
-      src: "/src/assets/mobile/image-fisheye.jpg",
-      src2: "/src/assets/desktop/image-fisheye.jpg",
+      src: "../src/assets/mobile/image-fisheye.jpg",
+      src2: "../src/assets/desktop/image-fisheye.jpg",
       text: "MAKE IT FISHEYE"
     }
   ])
@@ -52,7 +52,7 @@ const App = () => {
       <Header />
       <main>
         <section className='xl:flex items-center xl:relative'>
-          <div className='mx-auto w-[20.5rem] h-[14rem] mt-[6.1rem] bg-[url("/src/assets/mobile/image-interactive.jpg")] bg-center bg-no-repeat bg-contain xl:bg-[url("/src/assets/desktop/image-interactive.jpg")] sm:w-[30rem] sm:h-[20rem] xl:ml-[10.1rem] xl:mt-[10rem] xl:h-[500px] xl:w-[731px]'></div>
+          <div className='mx-auto w-[20.5rem] h-[14rem] mt-[6.1rem] bg-[url("../src/assets/mobile/image-interactive.jpg")] bg-center bg-no-repeat bg-contain xl:bg-[url("/src/assets/desktop/image-interactive.jpg")] sm:w-[30rem] sm:h-[20rem] xl:ml-[10.1rem] xl:mt-[10rem] xl:h-[500px] xl:w-[731px]'></div>
           <div className='xl:absolute right-32 top-[21.5rem] xl:w-[36rem] xl:h-[21rem] bg-white'>
             <h2 className='text-center mt-[3.05rem] text-[1.86rem] font-Josefin font-light tracking-[0.09rem] leading-[2rem] md:px-[15rem] md:text-[2rem] lg:px-[21rem] lg:text-[2.5rem] lg:leading-[2.5rem] xl:px-[0rem] xl:text-start xl:tracking-[0.005rem] xl:leading-[1] xl:text-[3rem] xl:ml-[5.9rem] xl:mt-[6rem]'>THE LEADER IN INTERACTIVE VR</h2>
 
